@@ -1,0 +1,53 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    box-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    box-align: center;
+    text-align: center;
+}
+
+.burgers-to-eat {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    box-align: center;
+}
+
+.burgers-eaten {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    box-align: center;
+}
+
+.add-burger {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    box-align: center;
+    align-content: center;
+}
+
+li {
+    padding: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

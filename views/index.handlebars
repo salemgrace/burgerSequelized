@@ -1,0 +1,46 @@
+<header>
+  <h1>Burger Appetit</h1>
+
+  <div>
+    <img src="assets/img/cute_burger_guy.png" alt="Cute Burger">
+  </div>
+</header>
+
+<div class="add-burger">
+  <h3>Let's make a burger...</h3>
+  <form class="create-form">
+    <label for="bur">Burger to create:</label>
+    <input type="text" id="bur" name="burger_name">
+    <button class="btn btn-success create-form" type="submit">Make Burger</button>
+  </form>
+</div>
+
+
+<div class="burgers-to-eat">
+  <h3>Burgers to Devour:</h3>
+  <ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+    <li>
+      {{burger_name}}
+      <button class="btn btn-danger eat-burger" data-id="{{id}}">
+        EAT ME!
+      </button>
+    </li>
+    {{/unless}}
+    {{/each}}
+  </ul>
+</div>
+
+<div class="burgers-eaten">
+  <h3>Burgers Consumed:</h3>
+  <ul>
+    {{#each burgers}}
+    {{#if devoured}}
+    <li>
+      {{burger_name}}
+    </li>
+    {{/if}}
+    {{/each}}
+  </ul>
+</div>
