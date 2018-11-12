@@ -2,7 +2,7 @@
   <h1>Burger Appetit</h1>
 
   <div>
-    <img src="assets/img/cute_burger_guy.png" alt="Cute Burger">
+    <img src="/assets/img/cute_burger_guy.png" alt="Cute Burger">
   </div>
 </header>
 
@@ -19,7 +19,7 @@
 <div class="burgers-to-eat">
   <h3>Burgers to Devour:</h3>
   <ul>
-    {{#each burgers}}
+    {{#each Burger}}
     {{#unless devoured}}
     <li>
       {{burger_name}}
@@ -35,7 +35,7 @@
 <div class="burgers-eaten">
   <h3>Burgers Consumed:</h3>
   <ul>
-    {{#each burgers}}
+    {{#each Burger}}
     {{#if devoured}}
     <li>
       {{burger_name}}
